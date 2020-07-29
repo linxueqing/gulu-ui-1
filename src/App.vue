@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Frank msg="Hello Vue 3.0 + Vite" />
+  <div>
+    <router-link to="/">页面一</router-link>|
+    <router-link to="/xxx">页面二</router-link>
+  </div>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import Frank from "./components/Frank.vue";
-
 export default {
-  name: "App",
-  components: {
-    Frank
-  }
+  name: "App"
 };
 </script>
